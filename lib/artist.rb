@@ -4,6 +4,7 @@ class Artist
 
 
 
+
   def initialize
     super
     @songs = []
