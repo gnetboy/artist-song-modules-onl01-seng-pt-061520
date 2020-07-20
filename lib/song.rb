@@ -13,7 +13,8 @@ class Song
   include Paramble::InstanceMethods
   include Memorable::InstanceMethods
 
-
+  @@songs=[]
+  
   def self.all
     @@songs
   end
