@@ -11,7 +11,7 @@ class Artist
   include Paramble::InstanceMethods
   include Memorable::InstanceMethods
 
-
+   @@artists=[]
   def initialize
     super
     @songs = []
