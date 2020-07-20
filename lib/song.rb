@@ -8,7 +8,7 @@ class Song
   attr_accessor :name
   attr_reader :artist
 
- 
+
 
   def self.find_by_name(name)
     @@songs.detect{|a| a.name == name}
