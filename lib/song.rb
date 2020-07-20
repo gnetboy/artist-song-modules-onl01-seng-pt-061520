@@ -8,6 +8,10 @@ class Song
   attr_accessor :name
   attr_reader :artist
 
+  extend Memorable::ClassMethods
+  extend Findable::ClassMethods 
+  include Paramble::InstanceMethods
+  include Memorable::InstanceMethods
 
 
   def self.find_by_name(name)
