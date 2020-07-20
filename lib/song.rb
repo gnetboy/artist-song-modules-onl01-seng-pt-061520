@@ -13,22 +13,13 @@ class Song
   include Paramble::InstanceMethods
   include Memorable::InstanceMethods
 
-
-  def self.find_by_name(name)
-    @@songs.detect{|a| a.name == name}
-  end
+   @@songs=[]
 
   def self.all
     @@songs
   end
 
-  def self.reset_all
-    self.all.clear
-  end
-
-  def self.count
-    self.all.count
-  end
+ 
 
   def artist=(artist)
     @artist = artist
